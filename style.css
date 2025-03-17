@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.image-box {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.image-box img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* 🟢 Drag qilinganda rasm biroz kattaradi va yengil ko‘tariladi */
+.dragging {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
+}
